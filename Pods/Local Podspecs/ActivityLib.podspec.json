@@ -19,9 +19,20 @@
     "ios": "9.0"
   },
   "source_files": "ActivityLib/Classes/**/*",
+  "resource_bundles": {
+    "ActivityLibBundle": [
+      "ActivityLib/Assets/*.png"
+    ]
+  },
   "dependencies": {
     "CZCommonLib": [
 
+    ],
+    "MJExtension": [
+      "~> 3.0.15"
+    ],
+    "DZNEmptyDataSet": [
+      "~> 1.8.1"
     ]
   }
 }

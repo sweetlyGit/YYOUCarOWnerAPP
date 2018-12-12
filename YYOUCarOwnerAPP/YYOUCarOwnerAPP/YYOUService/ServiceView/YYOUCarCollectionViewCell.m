@@ -31,7 +31,8 @@
             make.bottom.equalTo(weakSelf.contentView.mas_bottom);
         }];
         
-        self.itemImage = [UIImageView imageViewWithName:@"111" superView:self.contentView];
+        self.itemImage = [UIImageView imageViewWithName:@"111"];
+        [self.contentView addSubview:self.itemImage];
         [self.itemImage mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(weakSelf.contentView.mas_top).offset(20);
             make.centerX.equalTo(weakSelf.contentView.mas_centerX);

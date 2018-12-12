@@ -49,7 +49,7 @@
         make.width.equalTo(@(SCREEN_WIDTH));
     }];
     
-    UIImageView *headerImage = [UIImageView imageViewWithName:@"home_header" superView:backScrollerView];
+    UIImageView *headerImage = [UIImageView imageViewWithName:@"home_header"];
     [backScrollerView addSubview:headerImage];
     [headerImage mas_makeConstraints:^(MASConstraintMaker *make) {
     make.top.left.and.right.equalTo(backScrollerView);
@@ -71,7 +71,8 @@
         make.height.equalTo(@90);
     }];
     
-    UIImageView *addImage = [UIImageView imageViewWithName:@"add_btn" superView:addCarBtn];
+    UIImageView *addImage = [UIImageView imageViewWithName:@"add_btn"];
+    [addCarBtn addSubview:addImage];
     [addImage mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(addCarBtn.mas_centerX);
         make.top.equalTo(addCarBtn.mas_top).offset(20);
@@ -144,7 +145,8 @@
             make.height.equalTo(@80);
     }];
     
-    UIImageView *bottomLeftImage = [UIImageView imageViewWithName:@"home_store" superView:bottomView];
+    UIImageView *bottomLeftImage = [UIImageView imageViewWithName:@"home_store"];
+    [bottomView addSubview:bottomLeftImage];
     [bottomLeftImage mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(bottomView.mas_left).offset(20);
         make.centerY.equalTo(bottomView.mas_centerY);
